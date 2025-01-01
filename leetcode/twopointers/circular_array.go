@@ -1,4 +1,4 @@
-package leetcode
+package twopointers
 
 func CircularArrayLoopSet(nums []int) bool {
 	n := len(nums)

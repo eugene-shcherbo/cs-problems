@@ -1,4 +1,4 @@
-package leetcode
+package slidingwindow
 
 import "github.com/eugene-shcherbo/cs-problems/utils"
 

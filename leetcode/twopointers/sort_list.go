@@ -1,6 +1,10 @@
-package leetcode
+package twopointers
 
-func SortList(head *ListNode) *ListNode {
+import (
+	"github.com/eugene-shcherbo/cs-problems/leetcode"
+)
+
+func SortList(head *leetcode.ListNode) *leetcode.ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
@@ -15,7 +19,7 @@ func SortList(head *ListNode) *ListNode {
 	return merge(left, right)
 }
 
-func findMid(head *ListNode) *ListNode {
+func findMid(head *leetcode.ListNode) *leetcode.ListNode {
 	slow := head
 	fast := head.Next
 
@@ -27,8 +31,8 @@ func findMid(head *ListNode) *ListNode {
 	return slow
 }
 
-func merge(one, two *ListNode) *ListNode {
-	head := &ListNode{-1, nil}
+func merge(one, two *leetcode.ListNode) *leetcode.ListNode {
+	head := &leetcode.ListNode{Val: -1, Next: nil}
 	curr := head
 
 	for one != nil && two != nil {

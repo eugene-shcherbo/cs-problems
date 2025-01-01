@@ -1,4 +1,4 @@
-package leetcode
+package slidingwindow
 
 func FindSubstring(s string, words []string) []int {
 	counts := make(map[string]int)

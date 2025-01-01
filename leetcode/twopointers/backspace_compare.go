@@ -1,4 +1,4 @@
-package leetcode
+package twopointers
 
 func BackspaceCompare(s string, t string) bool {
 	for l, r := len(s)-1, len(t)-1; l >= 0 || r >= 0; l, r = l-1, r-1 {

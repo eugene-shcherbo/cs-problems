@@ -1,4 +1,4 @@
-package leetcode
+package twopointers
 
 import "github.com/eugene-shcherbo/cs-problems/utils"
 

@@ -1,4 +1,4 @@
-package leetcode
+package twopointers
 
 func IsHappy(n int) bool {
 	slow := n

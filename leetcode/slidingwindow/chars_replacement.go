@@ -1,4 +1,4 @@
-package leetcode
+package slidingwindow
 
 func CharacterReplacement(s string, k int) int {
 	bestSize := 0

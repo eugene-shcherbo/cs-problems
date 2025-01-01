@@ -1,4 +1,4 @@
-package leetcode
+package slidingwindow
 
 type Range struct {
 	s, e int

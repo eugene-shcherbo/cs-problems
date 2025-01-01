@@ -1,10 +1,12 @@
-package leetcode
+package twopointers
 
-func ReorderList(head *ListNode) {
+import "github.com/eugene-shcherbo/cs-problems/leetcode"
+
+func ReorderList(head *leetcode.ListNode) {
 	midNode := getMidNode(head)
 	reversedHalf := reverseList(midNode)
 
-	curr := &ListNode{-1, nil}
+	curr := &leetcode.ListNode{Val: -1, Next: nil}
 
 	for l, r := head, reversedHalf; l != midNode; {
 		nextL := l.Next
@@ -19,8 +21,8 @@ func ReorderList(head *ListNode) {
 	}
 }
 
-func reverseList(head *ListNode) *ListNode {
-	var curr *ListNode
+func reverseList(head *leetcode.ListNode) *leetcode.ListNode {
+	var curr *leetcode.ListNode
 
 	for head != nil {
 		head.Next, curr, head = curr, head, head.Next
@@ -29,7 +31,7 @@ func reverseList(head *ListNode) *ListNode {
 	return curr
 }
 
-func getMidNode(head *ListNode) *ListNode {
+func getMidNode(head *leetcode.ListNode) *leetcode.ListNode {
 	slow := head
 	fast := head
 

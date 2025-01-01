@@ -1,6 +1,8 @@
-package leetcode
+package twopointers
 
-func DetectCycle(head *ListNode) *ListNode {
+import "github.com/eugene-shcherbo/cs-problems/leetcode"
+
+func DetectCycle(head *leetcode.ListNode) *leetcode.ListNode {
 	slow, fast := head, head
 
 	for fast != nil && fast.Next != nil {

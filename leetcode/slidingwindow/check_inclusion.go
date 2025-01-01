@@ -1,4 +1,4 @@
-package leetcode
+package slidingwindow
 
 func CheckInclusion(s1 string, s2 string) bool {
 	var s1Counts = map[byte]int{}
