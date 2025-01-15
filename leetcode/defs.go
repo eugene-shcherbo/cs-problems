@@ -9,3 +9,9 @@ type Interval struct {
 	Start int
 	End   int
 }
+
+type BinaryTreeNode struct {
+	Val   int
+	Left  *BinaryTreeNode
+	Right *BinaryTreeNode
+}
